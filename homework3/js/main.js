@@ -7,12 +7,9 @@ btn.addEventListener('click', function () {
 	let str = text.value;
 	let count = 0;
 
-	console.log(str);
 	for (let i = 0; i < str.length; i++) {
-		for (let j = 0; j < vowelsArr.length; j++) {
-			if (str[i].toLowerCase() === vowelsArr[j]) count++;
-		}
+		if (vowelsArr.indexOf(str[i].toLowerCase()) >= 0) count++;
 	};
-	console.log(count);
+
 	value.textContent = count;
 });

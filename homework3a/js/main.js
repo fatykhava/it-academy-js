@@ -13,15 +13,12 @@ function mood(numb) {
 	let arr = [];
 	for (let i = 0; i < numb; i++) {
 		let random = randomDian(1, 7);
-		for(let key in objColors) {
-			if (key === colors[random]) {
-				if (!objColors[key]) {
-					arr.push(colors[random]);
-					objColors[key] = !objColors[key];
-				} else {
-					i--;
-				}
-			}
+		let color = colors[random];
+		if (color in objColors) {
+			arr.push(color);
+			delete objColors[color];
+		} else {
+			i--;
 		}
 	}
 	return arr;
