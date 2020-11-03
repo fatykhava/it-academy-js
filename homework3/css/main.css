@@ -1,0 +1,56 @@
+@import "./settings.css";
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(76, 150, 196);
+	overflow: hidden;
+}
+
+.container-vowels {
+	width: 800px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+input {
+	width: 250px;
+	height: 50px;
+	outline: none;
+	font-size: 20px;
+	box-sizing: border-box;
+	border: none;
+	margin-right: 50px;
+}
+
+.vowels-counter {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	outline: none;
+	font-size: 40px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+button {
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: 0.5s;
+	outline: none;
+	margin-right: 50px;
+}
+
+button:hover {
+	background-color: #fff;
+}
