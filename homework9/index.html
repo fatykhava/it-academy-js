@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="container-add-drink">
+    <input type="text" placeholder="Название напитка" id="drink-name">
+    <div class="container-check-alcohol">
+      <span>Содержит алкоголь?</span>
+      <input type="radio" name="alcohol" id="alcohol" class="radio-input">
+      <label for="alcohol">Да</label>
+      <input type="radio" name="alcohol" id="alcohol-free" checked class="radio-input">
+      <label for="alcohol-free">Нет</label>
+    </div>
+    <textarea name="drink-instruction" id="instruction" cols="30" rows="5" placeholder="Рецепт напитка"></textarea>
+  </div>
+  <button id="add-btn">Добавление напитка</button>
+  <input type="text" placeholder="Название напитка" id="search-drink">
+  <button id="info-btn">Информация о напитке</button>
+  <input type="text" placeholder="Название напитка" id="delete-drink">
+  <button id="delete-btn">Удалить напиток</button>
+  <button>Просмотреть все напитки</button>
+
+  <script src="./js/hashStorage.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
