@@ -36,11 +36,20 @@ document.querySelector('#delete-btn').addEventListener('click', () => {
 
   clearInput();
   if (drinkStorage.getValue(key)) {
-    drinkStorage.deleteValue();
+    drinkStorage.deleteValue(key);
     alert('Удаление прошло успешно!');
   } else {
     alert('Напитка нет в базе')
   }
+})
+
+document.querySelector('#show-drinks-btn').addEventListener('click', () => {
+  let drinkArr = drinkStorage.getKeys();
+  let str = '';
+  drinkArr.forEach((item) => {
+    str += item + ', '
+  })
+  alert(str);
 })
 
 function clearInput() {
