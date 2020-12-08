@@ -20,6 +20,7 @@ body {
 .container__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -32,43 +33,18 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* input {
-	width: 250px;
-	height: 50px;
-	outline: none;
-	font-size: 20px;
-	box-sizing: border-box;
-  border: none;
+.invalid {
+  display: none
 }
 
-.radio-input {
-  width: 20px;
-  height: 20px;
-  font-size: 0;
-  margin-right: 5px;
-  margin-left: 20px;
+input:valid {
+  box-shadow: 0 0 10px rgb(0, 128, 0);
 }
 
-textarea {
-	width: 450px;
-	outline: none;
-	font-size: 20px;
-	box-sizing: border-box;
-	border: none;
+input:invalid {
+  box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
-button {
-	width: 250px;
-  height: 50px;
-  margin-bottom: 20px;
-	cursor: pointer;
-	border: none;
-	font-size: 20px;
-	background-color: rgba(255, 255, 255, 0.5);
-	transition: 0.5s;
-	outline: none;
+input:invalid + .invalid {
+  display: block;
 }
-
-button:hover {
-	background-color: #ccc;
-} */

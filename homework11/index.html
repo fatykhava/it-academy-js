@@ -9,24 +9,30 @@
 </head>
 
 <body>
-  <div class="container">
+  <form class="container">
     <div class="container__row">
-      <label for="developers">Разработчики:</label><input type="text" id="developers">
+      <label for="developers">Разработчики:</label><input type="text" id="developers" required>
+      <span class="invalid">Введите значение</span>
     </div>
     <div class="container__row">
-      <label for="web-name">Название сайта:</label><input type="text" id="web-name">
+      <label for="web-name">Название сайта:</label><input type="text" id="web-name" required>
+      <span class="invalid">Введите значение</span>
     </div>
     <div class="container__row">
-      <label for="url">URL сайта:</label><input type="text" id="url">
+      <label for="url">URL сайта:</label><input type="url" id="url" required>
+      <span class="invalid">Введите URL</span>
     </div>
     <div class="container__row">
-      <label for="date">Дата запуска сайта:</label><input type="text" id="date">
+      <label for="date">Дата запуска сайта:</label><input type="date" id="date" required>
+      <span class="invalid">Выберите дату</span>
     </div>
     <div class="container__row">
-      <label for="users-during-day">Посетителей в сутки:</label><input type="text" id="users-during-day">
+      <label for="users-during-day">Посетителей в сутки:</label><input type="number" id="users-during-day" required>
+      <span class="invalid">Выберите число > 0</span>
     </div>
     <div class="container__row">
-      <label for="email">E-mail для связи:</label><input type="text" id="email">
+      <label for="email">E-mail для связи:</label><input type="email" id="email" required>
+      <span class="invalid">Введите email</span>
     </div>
     <div class="container__row">
       <span>Рубрика каталога:</span>
@@ -39,17 +45,20 @@
     </div>
     <div class="container__row">
       <span>Размещение:</span>
-      <input type="radio" name="accommodation">бесплатное
+      <input type="radio" name="accommodation" checked>бесплатное
       <input type="radio" name="accommodation">платное
       <input type="radio" name="accommodation">VIP
     </div>
     <div class="container__row">
       <label for="feedback">Разрешить отзывы:</label><input type="checkbox" id="feedback">
     </div>
-    <span class="description">Описание сайта:</span>
-    <textarea class=""></textarea>
+    <div class="container__row">
+      <span class="description">Описание сайта:</span>
+      <textarea minlength="10"></textarea>
+      <span class="invalid">Введите email</span>
+    </div>
     <button type="submit" class="submit">Отправить</button>
-  </div>
+  </form>
 
   <script src="./js/main.js"></script>
 </body>
