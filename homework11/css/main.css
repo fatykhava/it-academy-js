@@ -1,0 +1,74 @@
+@import "./settings.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(76, 150, 196);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.container__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+.description,
+textarea {
+  margin-bottom: 10px;
+}
+
+/* input {
+	width: 250px;
+	height: 50px;
+	outline: none;
+	font-size: 20px;
+	box-sizing: border-box;
+  border: none;
+}
+
+.radio-input {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+textarea {
+	width: 450px;
+	outline: none;
+	font-size: 20px;
+	box-sizing: border-box;
+	border: none;
+}
+
+button {
+	width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+	cursor: pointer;
+	border: none;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: 0.5s;
+	outline: none;
+}
+
+button:hover {
+	background-color: #ccc;
+} */
