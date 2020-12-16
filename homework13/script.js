@@ -67,6 +67,8 @@ questionForm.addEventListener('submit', function (e) {
     questionForm.q8
   ]
 
+  const step = 100 / userAns.length;
+
   function addClass(value, className) {
     for (let i = 0; i < value.length; i++) {
       if (value[i].checked) {
@@ -77,7 +79,7 @@ questionForm.addEventListener('submit', function (e) {
 
   userAns.forEach(function (item, index) {
     if (item.value === correctAnswers[index]) {
-      count += 12.5;
+      count += step;
       addClass(item, 'correct');
     } else {
       addClass(item, 'wrong');
@@ -94,7 +96,7 @@ questionForm.addEventListener('submit', function (e) {
     if (startResult === count) {
       clearInterval(getResult);
     } else {
-      startResult += 12.5;
+      startResult += step;
     }
   }, 20)
 })
@@ -127,7 +129,7 @@ function btnEventListener(e) {
     document.querySelector('#prev-btn').classList.add('hide');
   }
 
-  if (numberOpenQuest === 8) {
+  if (numberOpenQuest === questArr.length) {
     document.querySelector('#next-btn').classList.add('hide');
     document.querySelector('#quest-submit').classList.remove('hide');
   } else {
