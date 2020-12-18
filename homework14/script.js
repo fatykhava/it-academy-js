@@ -1,4 +1,6 @@
 const HOURS = 12;
+const MIN = 60;
+const SEC = 60;
 const DEGREE = 360;
 
 const clock = document.querySelector('#clock');
@@ -28,7 +30,13 @@ function showTime() {
   const min = time.getMinutes();
   const sec = time.getSeconds();
 
+  const hourArrow = document.querySelector('#hour');
+  const minArrow = document.querySelector('#min');
+  const secArrow = document.querySelector('#sec');
 
+  hourArrow.style.transform = `translate(-50%, -50%) rotate(${DEGREE / HOURS * hours}deg)`;
+  minArrow.style.transform = `translate(-50%, -50%) rotate(${DEGREE / MIN * min}deg)`;
+  secArrow.style.transform = `translate(-50%, -50%) rotate(${DEGREE / SEC * sec}deg)`;
 
   setTimeout(showTime, 1000);
 }
