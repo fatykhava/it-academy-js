@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: beige;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(100, 149, 237);
+  border: 5px solid rgb(79, 16, 174);
+  box-shadow: 0 0 20px rgba(0, 0, 0);
+}
+
+canvas {
+  border: 3px solid rgb(79, 16, 174);
+}
