@@ -76,4 +76,3 @@ btnsSlider.addEventListener('click', (e) => {
   getActiveSlide();
   // putActiveSlide(activeIndex);
 })
-
